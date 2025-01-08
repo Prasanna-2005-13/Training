@@ -17,15 +17,15 @@ a=100;//? re-intitalization
 console.log(a);
 
 
-let b=10;
+//let b=10;
 let b=20;
 console.log(b); //?redecalaration not possible
 
-const dob = 1990;
+//const dob = 1990;
 dob=2000;
 console.log(dob);
 
-const dob=1900;
+//const dob=1900;
 const dob=2000;
 console.log(dob);
 
