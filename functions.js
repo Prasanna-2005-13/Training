@@ -59,4 +59,50 @@ function x(_) {
 }
 x();
 
+//! return keyword
+function demo(a,b){
+    return a+b;    //!explicit return
+};
+let x = demo(5,5);
+console.log(x);
 
+let y = (a,b) => a+b; //!implicit return
+leta = y(10,20);
+console.log(a);
+
+let z = (a,b)=>{return a+b}; //!explicit return
+letb = z(10,100);
+console.log(b);
+
+//! Higher order function
+
+function hof(a){
+    return a;
+};
+let x = hof(10);
+console.log(x);
+
+
+function parent(callback){
+    return callback;
+}
+let x = parent(add(5,5));
+console.log(x);
+
+functionadd(a,b); //!callback
+    return a+b
+}
+
+//! closure
+var a =100;
+let b ="hi"
+function x(){
+    var user = "Vinay";
+    let company = "Google";
+    console.log(user);
+    console.log(company);
+    console.log(sal);
+    console.log(a,b);;
+    
+};
+x();

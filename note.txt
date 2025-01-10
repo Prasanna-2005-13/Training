@@ -204,3 +204,6 @@ Note :-
 - es6 - is stable version
 es - ECMA script
 ECMA - european computer manufacturing association
+
+what is return keyword?
+-return keyword is used to return the expression,variables
