@@ -1,4 +1,4 @@
-function addToCart(){
+/*function addToCart(){
     alert("Product is added to cart")
 }
 
@@ -93,6 +93,7 @@ functionadd(a,b); //!callback
     return a+b
 }
 
+
 //! closure
 var a =100;
 let b ="hi"
@@ -106,3 +107,22 @@ function x(){
     
 };
 x();
+
+function x(){
+    let a = 10;
+    const b = 20;
+    console.log(a,b);
+    function y() {
+        let p='js'
+        var q ='reactjs';
+        console.log(p,q);
+        function z() {
+            let username='Ram'
+            console.log(a);
+            console.log(q);
+        }
+        z();
+    }
+    y();
+}
+x();*/
