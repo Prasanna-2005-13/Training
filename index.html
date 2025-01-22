@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <h5> Javascript </h5>
-    <body>
-    <script src="async.js"></script>
-    </body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white; 
+        }
+        table {
+            width: 100%;
+            border: 2px solid black;
+            text-align: center;
+            padding: 2px;
+            background-color: rgb(231, 192, 222); 
+        }
+        table, tr, th, td {
+            padding: 2px;
+            border: 2px solid black;
+            border-collapse: collapse;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
 </head>
+<body>
+    <script src="/async.js"></script>
+    <table>
+        <thead>
+            <tr>
+                <th>S.NO</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody id="store">
+            <!-- Rows will be dynamically populated -->
+        </tbody>
+    </table>
+</body>
 </html>

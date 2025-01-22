@@ -1,4 +1,4 @@
-console.log(10);
+/*console.log(10);
 console.log(20);
 //setTimeout(()=>{
   //  console.log(30); 
@@ -33,3 +33,31 @@ p3
 .then(data=>console.log(data))
 .catch(err=>console.log(err))
 .finally(()=>console.log("finally for both"))
+*/
+//! API fetching
+
+function fetchUsers()
+{
+  let response = fetch("https://jsonplaceholder.typicode.com/users");
+  //console.log(response);
+  response.then(result=>{
+    //console.log(result.json());
+    return result.json().then(data=>{
+      //console.log(data);
+      let store = document.getElementById("store");
+      console.log(store);
+      data.map(user=>{
+        //console.log(user);
+        store.innerHTML +=`
+        <tr>
+        <td>${user.id}</td>
+        <td>${user.name}</td>
+        <td>${user.email}</td>
+        <td>${user.company.name}</td>
+        </tr>`
+      })
+    })
+  })
+  .catch(err=>console.log(err))
+}
+fetchUsers();
