@@ -33,7 +33,7 @@ p3
 .then(data=>console.log(data))
 .catch(err=>console.log(err))
 .finally(()=>console.log("finally for both"))
-*/
+
 //! API fetching
 
 function fetchUsers()
@@ -59,5 +59,40 @@ function fetchUsers()
     })
   })
   .catch(err=>console.log(err))
+}
+fetchUsers();
+
+
+function demo()
+{
+  console.log("start");
+  console.log(10)
+  console.log(20)
+  return;
+  console.log(30);
+  console.log(40);
+}
+demo();
+*/
+
+let p = new Promise((resolve , reject)=>{
+  setTimeout(()=>{
+    resolve("Success");
+  }, 5000)
+})
+
+async function demo(){
+  console.log("Start");
+  let x =await p;
+  console.log(x);
+  console.log("End");
+};
+demo()
+
+async function fetchUsers() 
+{
+  let response =await fetch("https://jsonplaceholder.typicode.com/users");
+  let data = response.json();
+  console.log(data);
 }
 fetchUsers();
